@@ -186,16 +186,16 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 
 function game(user, computer){
-  if(user===computer){
-    return 'Its a tie.';
-  }else if(user === 'rock' && computer === 'scissors'){
-    return 'You win!';
-  }else if(user === 'paper' && computer === 'rock'){
-    return 'You win!';
-  }else if(user === 'scissors' && computer ==='paper'){
-    return 'You win!';
+  if(user==computer){
+    return "it's a tie";
+  }else if(user == 'rock' && computer == 'scissors'){
+    return 'you win!';
+  }else if(user == 'paper' && computer == 'rock'){
+    return 'you win!';
+  }else if(user =='scissors' && computer =='paper'){
+    return 'you win!';
   }else{
-    return 'You lose.';
+    return 'you lose!';
   }
 }
 
@@ -212,10 +212,10 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+return km * 0.621371
 }
-
+console.log('task 5a', miles(6));
 
 
 //Task 5b - Feet to CM
@@ -226,10 +226,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48;
 }
-
+console.log('task 5b', feet(20));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -246,10 +246,14 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+for(let i = number; i > 0; i--){
+  return '5 bottles of soda on the wall, 5 bottles of soda, take one down pass it around 4 bottles of soda on the wall';
+  
 }
-
+}
+console.log('task 6', annoyingSong(5));
+console.log('task 6', annoyingSong(4));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -266,9 +270,25 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+if(score > 90){
+  return 'you got an A';
+}else if(score >= 80 && score <= 89){
+  return 'you got a B';
+}else if(score >= 70 && score <= 79){
+  return 'you got a C';
+}else if(score >=60 && score <= 69){
+  return 'you got a D';
+}else{
+  return 'you got an F';
 }
+ 
+}
+  
+
+ 
+
+
 
 
 
