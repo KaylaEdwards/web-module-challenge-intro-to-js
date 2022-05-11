@@ -12,12 +12,16 @@ describe('multiplyFunction', ()=>{
     })
 });
 
-describe('dogYearsFunction', ()=>{
+describe('dogYearsFunction', (age)=>{
     it('returns humanYears * 7', ()=>{
         expect(functions.dogYears(5)).toBe(35);
     })
 });
-
+function dogYears(age){
+    return age * 7
+  }
+  console.log('task 2', dogYears (15));
+  
 describe('hungryDogFunction', ()=>{
   it('Dog is 1 year and is 5lbs or less', ()=>{
     expect(functions.hungryDog(4, 1)).toBe(0.2);

@@ -138,6 +138,12 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 function hungryDog(weight,age){
 if(age >= 1 && weight <= 5){
   return weight = 0.05;
+}else if(age >= 1 && weight <= 10){
+  return weight = 0.04;
+}else if(age >= 1 && weight <= 15){
+  return 0.03;
+}else if(age >= 1 && weight > 15){
+return weight = 0.02
 }
 
 }
