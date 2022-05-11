@@ -19,9 +19,13 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
+const votingAge = 18
+if(votingAge >= 18){
+  console.log('task 1a:', true);
+}
+else{
+  console.log('task 1a:', false);
+}
 /*
 Task 1b - Values (not auto tested)
 
@@ -33,10 +37,12 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
-
+var firstThing = 10;
+var secondThing = 5;
+ if(firstThing === '10'){
+secondThing === '2';
+ }
+ console.log('task 1b:', secondThing);
 
 /*
 Task 1c - Convert Strings to Numbers (not auto tested)
@@ -48,8 +54,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+const party = '1999';
+console.log('task 1c:', Number(party));
 
 
 /*
@@ -61,10 +67,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a,b){
+  return a * b;
 }
-
+console.log('task 1d', multiply (3, 5));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -77,10 +83,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7
 }
-
+console.log('task 2', dogYears (15));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -129,10 +135,21 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight,age){
+if(age >= 1 && weight <= 5){
+  return weight = 0.05;
 }
 
+}
+
+
+
+
+
+
+
+
+  
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -157,7 +174,17 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 
 function game(user, computer){
-  /*add your code here*/
+  if(user===computer){
+    return 'Its a tie.';
+  }else if(user === 'rock' && computer === 'scissors'){
+    return 'You win!';
+  }else if(user === 'paper' && computer === 'rock'){
+    return 'You win!';
+  }else if(user === 'scissors' && computer ==='paper'){
+    return 'You win!';
+  }else{
+    return 'You lose.';
+  }
 }
 
 
